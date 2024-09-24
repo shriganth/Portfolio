@@ -1,0 +1,117 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.menu {
+    height: 100vh;
+    width: 320px;
+    background-color: rgba(57, 186, 111, 0.835);
+    color: white;
+    z-index: -1;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-photo {
+    width: 140px;
+    border-radius: 50%;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+#name {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#intro {
+    font-weight: 500;
+}
+
+.social-links {
+    margin: 0px auto;
+    width: 200px;
+    display: flex;
+    padding: 0px 10px;
+    justify-content: space-between;
+}
+
+.social-links li {
+    list-style: none;
+}
+
+.social-links img {
+    width: 26px;
+    border: 1px solid rgba(41, 151, 87, 0.835);;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgba(41, 151, 87, 0.835);
+}
+
+.button-section {
+    border-top: 1px solid rgba(41, 151, 87, 0.835);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.button-section span {
+    display: flex;
+    transition: background-color 0.5s ease; /* Adds hover effect transition */
+}
+
+.button-section a {
+    font-weight: 600;
+    color: white;
+    margin-left: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+}
+
+.button-section a img {
+    margin-right: 15px;
+    display: flex;
+}
+
+.button-section span:hover {
+    background-color: rgba(41, 151, 87, 0.835);
+}
+
+#hire-me {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 4px 4px 20px rgba(41, 151, 87, 0.835);
+    background-color: transparent;
+    margin: 0px auto;
+    width: fit-content;
+    padding: 6px 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#hire-me:hover {
+    box-shadow: 4px 4px 20px rgba(22, 88, 50, 0.835);
+    background-color: rgba(41, 151, 87, 0.835);
+}
+
+#end-line {
+    border-bottom : 1px solid rgba(41, 151, 87, 0.835);
+}

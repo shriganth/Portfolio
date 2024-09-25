@@ -10,30 +10,109 @@
 </head>
 <body>
     
-    <nav class="menu" >
-        <div id="end-line">
-            <div class="profile-section">
-                <p id="name">Shriganth RA</p>
-                <img id="profile-photo" src="photos/th-720243558.jpeg" alt="profile">
-                <div id="intro"><p>Hi, my name is Shriganth RA and I'm a software engineer. Welcome to my personal website</p></div>
-                <ul class="social-links">
-                    <li><a href="Linkedin"><img src="icons/icons8-linkedin-24.png" alt=""></a></li>
-                    <li><a href="Github"><img src="icons/icons8-github-24.png" alt=""></a></li>
-                    <li><a href="Instagram"><img src="icons/icons8-instagram-24.png" alt=""></a></li>
-                    <li><a href="Twitter"><img src="icons/icons8-twitter-24.png" alt=""></a></li>
-                </ul>
+    <div class="container">
+        <nav class="menu" >
+            <div id="end-line">
+                <div class="profile-section">
+                    <p id="name">Shriganth RA</p>
+                    <img id="profile-photo" src="photos/th-720243558.jpeg" alt="profile">
+                    <!-- <div id="intro"><p>Hi, my name is Shriganth RA and I'm a software engineer. Welcome to my personal website</p></div> -->
+                    <ul class="social-links">
+                        <li><a href="Linkedin"><img src="icons/icons8-linkedin-24.png" alt=""></a></li>
+                        <li><a href="Github"><img src="icons/icons8-github-24.png" alt=""></a></li>
+                        <li><a href="Instagram"><img src="icons/icons8-instagram-24.png" alt=""></a></li>
+                        <li><a href="Twitter"><img src="icons/icons8-twitter-24.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="button-section">
+                    <button id="button1" onclick="show_page('page1')"><a href="#page1"><img src="/icons/icons8-male-user-24.png" alt="">About Me</a></button>
+                    <button id="button2" onclick="show_page('page2')"><a href="#page2"><img src="/icons/icons8-male-user-24.png" alt="">Portfolio</a></button>
+                    <button id="button3" onclick="show_page('page3')"><a href="#page3"><img src="/icons/icons8-male-user-24.png" alt="">Resume</a></button>
+                    <button id="button4" onclick="show_page('page4')"><a href="#page4"><img src="/icons/icons8-male-user-24.png" alt="">Contact</a></button>
+                </div>        
+                <button id="hire-me"><a href="#"><img src="/icons/icons8-telegram-app-24.png" alt=""><a>Hire Me</a></button> <br>
             </div>
-            <div class="button-section">
-                <span><a href="#"><img src="/icons/icons8-male-user-24.png" alt="">About Me</a></span>
-                <span><a href="#"><img src="/icons/icons8-male-user-24.png" alt="">Portfolio</a></span>
-                <span><a href="#"><img src="/icons/icons8-male-user-24.png" alt="">Resume</a></span>
-                <span><a href="#"><img src="/icons/icons8-male-user-24.png" alt="">Contact</a></span>
-            </div>        
-            <button id="hire-me"><a href="#"><img src="/icons/icons8-telegram-app-24.png" alt=""><a>Hire Me</a></button> <br>
-        </div>
-        <h4>Dark Mode</h4>
-        <button></button>
-    </nav>
+            <div class="theme">
+                <h4>Dark Mode</h4>
+                <label class="switch">
+                    <input onclick="myfunction()" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </nav>
+    
+        <!-- About -->
+    
+        <section id="page1" class="page">
+            <div class="about-outline">
+                <div class="about" >
+                    <img  id="photo" src="photos/th-2085730054.jpeg" alt="">
+                    <p id="Name">Shriganth RA</p>
+                    <p id="designation">Fresher</p>
+                    <span><p id="summary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam repellat porro dicta vel atque amet commodi mollitia. Accusantium molestias, dolore qui fuga modi, quis iste consequatur repellat sapiente distinctio voluptas!</p></span>
+                    <div class="button-group">
+                        <button id="portfolio">View Portfolio</button>
+                        <button id="resume">View resume</button>
+                    </div>
+                    <div class="testimonal">
+                        <div id="head"><span></span><h2>What I do</h2></div>
+                        <p id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime architecto vero, non porro fuga hic, pariatur a inventore perspiciatis laudantium omnis voluptatum, tempore error optio labore explicabo ducimus aut commodi.</p>
+                    </div>
+                    <div class="skills">
+                        <div class="column1">
+                            <div class="programming">
+                                <h4>C</h4>
+                                <div class="range-outline"><div class="range"></div></div>
+                            </div>
+                            <div class="programming">
+                                <h4>C</h4>
+                                <div class="range-outline"><div class="range"></div></div>
+                            </div>
+                            <div class="programming">
+                                <h4>C</h4>
+                                <div class="range-outline"><div class="range"></div></div>
+                            </div>
+                            <div class="programming">
+                                <h4>C</h4>
+                                <div class="range-outline"><div class="range"></div></div>
+                            </div>
+                        </div>
+                        <div class="column2">
+                            <div class="programming">
+                                <h4>C</h4>
+                                <div class="range-outline"><div class="range"></div></div>
+                            </div>
+                            <div class="programming">
+                                <h4>C</h4>
+                                <div class="range-outline"><div class="range"></div></div>
+                            </div>
+                            <div class="programming">
+                                <h4>C</h4>
+                                <div class="range-outline"><div class="range"></div></div>
+                            </div>
+                            <div class="programming">
+                                <h4>C</h4>
+                                <div class="range-outline"><div class="range"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="page2" class="page" style="display: none;">
+            <h1>Portfolio</h1>
+        </section>
+
+        <section id="page3" class="page" style="display: none;">
+            <h1>Resume</h1>
+        </section>
+
+        <section id="page4" class="page" style="display: none;">
+            <h1>Contact</h1>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

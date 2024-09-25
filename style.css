@@ -1,19 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Roboto';
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
 .menu {
     height: 100vh;
-    width: 320px;
+    width: 300px;
     background-color: rgba(57, 186, 111, 0.835);
     color: white;
-    z-index: -1;
+    z-index: 1;
     position: fixed;
     display: flex;
     flex-direction: column;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
 }
 
 #profile-photo {
@@ -31,11 +43,16 @@ body {
 }
 
 #intro {
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#intro p {
+    text-align: center;
 }
 
 .social-links {
-    margin: 0px auto;
+    margin: 30px auto;
     width: 200px;
     display: flex;
     padding: 0px 10px;
@@ -54,15 +71,23 @@ body {
     background-color: rgba(41, 151, 87, 0.835);
 }
 
+.social-links img:hover {
+    border: 1px solid rgba(57, 186, 111, 0.835);
+    background-color: rgba(57, 186, 111, 0.835);
+    box-shadow: 0px 0px 20px rgba(41, 151, 87, 0.835);
+}
+
 .button-section {
-    border-top: 1px solid rgba(41, 151, 87, 0.835);
+    border-top: 1px solid rgba(129, 129, 129, 0.835);
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
 
-.button-section span {
+.button-section button {
+    background-color: transparent;
+    border: none;
     display: flex;
     transition: background-color 0.5s ease; /* Adds hover effect transition */
 }
@@ -70,7 +95,7 @@ body {
 .button-section a {
     font-weight: 600;
     color: white;
-    margin-left: 80px;
+    margin-left: 70px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -87,9 +112,10 @@ body {
     display: flex;
 }
 
-.button-section span:hover {
+.button-section button:hover {
     background-color: rgba(41, 151, 87, 0.835);
 }
+
 
 #hire-me {
     color: white;
@@ -113,5 +139,191 @@ body {
 }
 
 #end-line {
-    border-bottom : 1px solid rgba(41, 151, 87, 0.835);
+    border-bottom : 1px solid rgba(129, 129, 129, 0.835);
+}
+
+.theme {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider::before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round::before {
+    border-radius: 50%;
+}
+
+
+/* About */
+
+.page {
+    height: 100vh;
+    margin-left: 300px;
+    width: 1620px;
+}
+
+.about-outline {
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    margin-top: 50px;
+    width: 1200px;
+}
+
+.about img {
+    width: 400px;
+    float: right;
+}
+
+.about h1{
+    font-size: 36px;
+}
+
+.about #Name {
+    font-size: 54px;
+    line-height: 0.1px;
+    font-weight: 500;
+}
+
+.about #designation {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 0px;
+}
+
+.about #summary {
+    width: 650px;
+    text-align: justify;
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
+}
+
+.button-group #portfolio {
+    padding: 7px 14px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border-radius: 4px;
+    border: 2px solid rgba(22, 88, 50, 0.835);
+    background-color: rgba(22, 88, 50, 0.835);
+}
+#portfolio:hover {
+    background-color: white;
+    color: rgba(22, 88, 50, 0.835);
+    box-shadow: 0px 0px 20px rgba(22, 88, 50, 0.835);
+    transform: scale(1.05);
+}
+
+.button-group #resume {
+    padding: 7px 14px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border-radius: 4px;
+    background-color: grey;
+    border: 2px solid grey;
+}
+#resume:hover {
+    background-color: white;
+    color: grey;
+    box-shadow: 0px 0px 20px grey;
+    transform: scale(1.05);
+}
+
+.testimonal {
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 1100px;
+    padding: 10px 20px;
+    box-shadow: 10px 10px 30px grey;
+}
+
+.range-outline {
+    border-radius: 20px;
+    width: 400px;
+    height: 8px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.range {
+    width: 75%;
+    height: 6px;
+    background-color: rgba(41, 151, 87, 0.835);
+}
+
+.programming h4 {
+    line-height: 0;
+}
+
+.skills {
+    padding: 20px;
+    width: 1100px;
+    height: fit-content;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 10px 10px 30px grey;
+    border-radius: 10px;
+}
+
+#Contact {
+    visibility: hidden;
 }

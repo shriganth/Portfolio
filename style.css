@@ -324,6 +324,71 @@ input:checked + .slider::before {
     border-radius: 10px;
 }
 
-#Contact {
-    visibility: hidden;
+/* Contact */
+
+.outer-box {
+    display: flex;
+    justify-content: center;
+    padding-top: 11%;
+}
+
+.left {
+    width: 500px;
+    height: 550px;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.right {
+    width: 500px;
+    height: 550px;
+    border: 1px solid black;
+    border-left: 0.5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.left h1 {
+    padding: 0% 10%;
+    margin-top: 40px;
+}
+
+.message-input {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+}
+
+.message-input input {
+    margin-bottom: 24px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 15px;
+}
+
+.message-input input:focus {
+    outline: none;
+}
+
+.message-input textarea {
+    height: 200px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    resize: none;
+    font-size: 15px;
+}
+
+.message-input textarea:focus {
+    outline: none;
+}
+
+.message-input #submit {
+    width: 150px;
+    padding: 2%;
+    border: 1px solid black;
+}
+
+#submit {
+    border-radius: 10px;
 }
